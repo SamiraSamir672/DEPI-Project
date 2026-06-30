@@ -73,9 +73,9 @@ The data is visualized across **4 modular interactive dashboards** built to tell
 ---
 
 👥 Authors & Contributors
-Meet the team behind this project (DEPI Project Team):
+* Meet the team behind this project (DEPI Project Team):
 
-**Samira Samir**
-**Yasmin Abdelhamid**
-**Sama Mohamed**
-**Rewaa Sabry**
+* **Samira Samir**
+* **Yasmin Abdelhamid**
+* **Sama Mohamed**
+* **Rewaa Sabry**
