@@ -1,102 +1,81 @@
-# DEPI-Project
+# 🪙 Bitcoin Market Behavior Analysis & Feature Engineering
 
-##📊 Bitcoin Data Analysis & Feature Engineering
-This project focuses on analyzing historical data of Bitcoin from 2018 to 2025. The goal is to build a clean, feature-rich dataset that captures market behavior and can be used for data analysis, machine learning, and dashboard visualization.
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-2.0+-purple.svg)](https://pandas.pydata.org/)
+[![Plotly](https://img.shields.io/badge/Plotly-Interactive-orange.svg)](https://plotly.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-##🚀 Project Overview
-In this project, I developed a complete data preprocessing pipeline that:
+## 🚀 Project Overview
+This project focuses on analyzing historical Bitcoin market data to build a clean, feature-rich dataset that captures complex market behaviors. By engineering advanced financial features and processing multiple timeframes, this project bridges the gap between raw trading data and actionable insights for **Data Analysis, Machine Learning, and Interactive Dashboards**.
 
-Combines multiple timeframes (15m, 1h, 4h, 1d)
-Cleans and validates the dataset
-Engineers advanced financial features
-Prepares a structured dataset for analysis and modeling
-##📂 Dataset
-Source: Kaggle Bitcoin Historical Dataset
+---
 
-Time Period: 2018 – 2025
+## 📂 Dataset Architecture
+* **Source:** Kaggle Bitcoin Historical Dataset
+* **Time Period:** 2018 – 2025
+* **Analyzed Timeframes:** `15m` | `1h` | `4h` | `1d`
 
-Timeframes:
+---
 
-15 Minutes
-1 Hour
-4 Hours
-1 Day
-##🧹 Data Preprocessing
-Key preprocessing steps:
+## 🧹 Data Preprocessing Pipeline
+Key preprocessing and validation steps implemented:
+* **Data Merging:** Combined multiple timeframe datasets into a unified analytical structure.
+* **Temporal Sorting:** Chronologically ordered data and converted timestamps to UTC datetime format.
+* **Data Sanitization:** Removed missing values, invalid records, and eliminated duplicates based on `(Open time, timeframe)`.
+* **Time Feature Extraction:** Extracted explicit fields for `Year`, `Month`, `Day`, and `Quarter` for macroeconomic analysis.
 
-Merged multiple datasets into one unified DataFrame
+---
 
-Converted time columns to datetime format (UTC)
+## ⚙️ Advanced Feature Engineering 
 
-Sorted data chronologically
+### 📈 Price & Trend Dynamics
+* `price_change`: Measures raw interval movement ($Close - Open$).
+* `return_pct`: Percentage return per interval.
+* `volatility`: Intraday price range ($High - Low$).
+* `trend_direction`: Categorical classification of Bullish/Bearish phases.
+* `trend_length`: Counts consecutive intervals moving in the same direction.
+* `trend_strength`: Quantifies price movement velocity weighted by volume.
 
-Removed missing values and invalid records
+### 💰 Volume & Liquidity Microstructure
+* `Buy/Sell Volume`: Separates taker buy volume from overall volume.
+* `buy_ratio` & `sell_ratio`: Proportional dominance of buyers vs. sellers.
+* `order_flow`: Net imbalance ($Taker\ Buy - Sell\ Volume$) to anticipate short-term moves.
+* `capital_flow`: Total fiat-equivalent volume filtered through the market (Quote Asset Volume in USDT).
+* `trade_activity`: Total trade count per interval to gauge active retail/institutional participation.
 
-Eliminated duplicates based on (Open time, timeframe)
+### 🚨 Market Behavior & Strategic Signals
+* **High Volatility Clusters:** Flags sustained periods of elevated risk.
+* **Market Compression:** Detects price tightening and volume drops (low-volatility squeezing before breakouts).
+* **Volume Spikes:** Highlights institutional entry or panic events.
+* **Market Overheating:** Signals extreme FOMO or overbought conditions.
+* **Whale Activity:** Pinpoints high-volume execution via unusually low trade counts.
+* **Support & Resistance Levels:** Tracks price rejection boundaries using trailing rolling windows (`Close - Low` and `High - Close`).
+* **Breakout Detection:** Real-time flagging of prices exceeding recent historical bounds (`breakout_up` / `breakout_down`).
 
-Extracted time-based features:
+---
 
-Year
-Month
-Day
-Quarter
-##⚙️ Feature Engineering
-📈 Price Features
-price_change → Close - Open
-return_pct → Price return percentage
-volatility → High - Low
-📊 Trend Features
-trend_direction → Uptrend / Downtrend
-trend_length → Consecutive trend duration
-trend_strength → Price movement weighted by volume
-💰 Volume & Market Activity
-Buy/Sell volume
-Buy/Sell ratios
-Order flow
-Capital flow
-Trade activity
-🚨 Market Behavior Signals
-High volatility
-Compression (low activity periods)
-Volume spikes
-Overheating (strong bullish pressure)
-Whale activity
-📉 Technical Indicators
-Support & Resistance levels
-Breakout detection (up/down) using rolling windows
-🧠 Output
-Final dataset:
+## 📊 Analytical Dashboards 
+The data is visualized across **4 modular interactive dashboards** built to tell a comprehensive market story:
 
-bitcoin_kpis.csv
-This dataset is ready for:
+1. **Markert Behavier Analysis:** Explores overall direction, trend duration distribution, and whether price moves are backed by volume.
+2. market participation:** Monitors raw liquidity, trade counts, and the aggressive buying/selling order flow imbalance.
+3. **Market Risk:** Offers an annual breakdown of market overheating rates, high-volatility frequency, and whale participation.
+4. **Support & Market Structure:** Visualizes dynamic price rejection zones and identifies market compression phases preceding major explosive moves.
 
-Data analysis
-Machine learning models
-Time-series forecasting
-Trading strategy development
-📊 Dashboard (Coming Soon)
-An interactive dashboard will be added to visualize:
+---
 
-Price trends
-Volume behavior
-Market signals
-Breakout events
-Tools that may be used:
+## 🛠️ Technologies Used
+* **Languages & Core:** Python 
+* **Data Manipulation:** Pandas, NumPy
+* **Data Ingestion:** KaggleHub
+* **Visualization:** Matplotlib, Seaborn
 
-Power BI / Tableau
-Python (Plotly / Dash / Streamlit)
-##🛠️ Technologies Used
-Python
-Pandas
-NumPy
-KaggleHub
-##📌 Future Work
-Build predictive models (price movement / trend prediction)
-Add technical indicators (RSI, MACD, Moving Averages)
-Develop an interactive dashboard
-Deploy the project
-##🙌 Authors
-Yasmin Abdelhamid
-Samira Samir
-Sama Mohamed
-Rewaa Sabry
+---
+
+## 👥 Authors & Contributors
+Meet the team behind this project (DEPI Project Team):
+
+**Samira Samir
+**Yasmin Abdelhamid
+**Sama Mohamed
+**Rewaa Sabry
