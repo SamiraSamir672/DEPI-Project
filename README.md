@@ -58,7 +58,7 @@ Key preprocessing and validation steps implemented:
 The data is visualized across **4 modular interactive dashboards** built to tell a comprehensive market story:
 
 1. **Markert Behavier Analysis:** Explores overall direction, trend duration distribution, and whether price moves are backed by volume.
-2. market participation:** Monitors raw liquidity, trade counts, and the aggressive buying/selling order flow imbalance.
+2. **market participation:** Monitors raw liquidity, trade counts, and the aggressive buying/selling order flow imbalance.
 3. **Market Risk:** Offers an annual breakdown of market overheating rates, high-volatility frequency, and whale participation.
 4. **Support & Market Structure:** Visualizes dynamic price rejection zones and identifies market compression phases preceding major explosive moves.
 
@@ -75,7 +75,7 @@ The data is visualized across **4 modular interactive dashboards** built to tell
 👥 Authors & Contributors
 Meet the team behind this project (DEPI Project Team):
 
-Samira Samir
-Yasmin Abdelhamid
-Sama Mohamed
-Rewaa Sabry
+**Samira Samir**
+**Yasmin Abdelhamid**
+**Sama Mohamed**
+**Rewaa Sabry**
