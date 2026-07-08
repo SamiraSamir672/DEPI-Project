@@ -354,10 +354,10 @@ Fabric_Links/Fabric Links.md
 
 # 👩‍💻 Developed By
 
-**Yasmin Abdelhamid**
-**Sama Mohamed**
-**Rewaa Sabry**
-**Samira Samir**
+- Yasmin Abdelhamid
+- Sama Mohamed
+- Rewaa Mostafa
+- Samira Samir
 
 DEPI Graduation Project
 
