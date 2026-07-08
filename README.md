@@ -361,6 +361,6 @@ Fabric_Links/Fabric Links.md
 
 DEPI Graduation Project
 
-Business Intelligence & Machine Learning
+Data Analysis & Machine Learning
 
 2026
