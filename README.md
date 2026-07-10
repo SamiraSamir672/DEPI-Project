@@ -1,8 +1,5 @@
 # 📈 Bitcoin Market Analysis & Buy Signal Prediction
 
-![Uploading bitcoin pipeline.jpeg…]()
-
-
 ## 📌 Project Overview
 
 This project is an end-to-end Business Intelligence and Machine Learning solution for analyzing Bitcoin market behavior and predicting Buy Signals across multiple timeframes.
