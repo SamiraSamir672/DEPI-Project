@@ -1,6 +1,6 @@
 # 📈 Bitcoin Market Analysis & Buy Signal Prediction
 
-![Uploading image.png…]()
+![Uploading bitcoin pipeline.jpeg…]()
 
 
 ## 📌 Project Overview
